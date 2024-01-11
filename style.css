@@ -97,10 +97,10 @@ html {
 .text a {
   display: inline-block;
   font-size: 1em;
-  background: black;
+  background: white;
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
