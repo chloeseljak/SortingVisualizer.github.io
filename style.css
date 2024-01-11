@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+}
+
+#wrapper {
+  clear: floats;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: black;
+  z-index: 2;
+  transition: 0.5s;
+}
+.showcase .text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+.showcase img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.sortingPage img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.text {
+  position: relative;
+  z-index: 10;
+ 
+}
+
+.text h2 {
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+ 
+
+}
+
+.text p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.sortingPage button{ 
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  font-size: 1em;
+  background: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.sortingPage .soundBtn {
+  z-index: 10;
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  
+}
+
+.sortingPage .soundBtn button {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0; /* Remove padding to ensure exact dimensions */
+}
+
+.sortingPage .soundBtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sortingPage .soundBtn button:hover img {
+  transform: scale(1.1);
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.showcase.active {
+  right: 300px;
+}
+
+.toggle.active{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+
+}
+.toggle.active{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: done; 
+  align-items: center; 
+  justify-content: center;
+
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+
+}
+.menu ul li a:hover {
+  color: #03a9f4
+}
+@media(max-width: 798px) {
+  .showcase, .showcase header {
+      padding: 0px;
+  }
+
+  .text h2 {
+      font-size: 3em;
+  }
+
+  .text h3 {
+      font-size: 2em;
+  }
+}
+
+.sortingPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.sortingPage h2 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sortingPage .container {
+  z-index: 100;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+}
+
+.bar {
+    width: 10px;
+    background-color: black;
+    margin: 1px;
+}
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    margin: 0;
+   
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black;
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }

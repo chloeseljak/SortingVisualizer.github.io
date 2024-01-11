@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<head> 
+    <title>
+        Merge Sort Sorting Visualizer
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sortingPage">
+    <img src="images/background.jpg" /> 
+    
+    <header>
+        <div class="toggle"></div>  
+    </header>
+    
+    <h2> Merge Sort </h2>
+    <div class="container"></div>
+  
+    <div>
+        <button onClick="init()">Restart </button>
+        <button onClick="play()">Play</button>
+        <button onClick="pause()">Pause</button>
+       
+    </div>
+
+    <div class="soundBtn">
+        <button onClick="toggleSound()"> <img src="images/sound_on_icon.png"/> </button>
+    </div>
+    
+    <div class="slidecontainer">
+        <input type="range" min="1" max="130" value="66" class="slider" id="numBars">
+        <p id="printNumBars"></p> <!-- Add an element with id="demo" to display the slider value -->
+        
+        <input type="range" min="10" max="1000" value="508" class="slider" id="speedSlider">
+    
+    </div>
+
+    
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="bubble.html">Bubble Sort</a></li>
+            <li><a href="selection.html">Selection Sort</a></li>
+            <li><a href="merge.html">Merge Sort</a></li>
+            
+        </ul>
+    </div> 
+
+    <script src="sorting.js"></script>
+</body>
